@@ -5,26 +5,17 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nathanaelkane/vim-indent-guides'
 "Plug 'noahfrederick/vim-hemisu'
 Plug 'sickill/vim-monokai'
-Plug 'scrooloose/nerdcommenter'
+
 call plug#end()
 
 syntax enable
-
-"colorscheme hemisu
 colorscheme monokai
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
 set relativenumber
 set cursorline
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let mapleader=','
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
